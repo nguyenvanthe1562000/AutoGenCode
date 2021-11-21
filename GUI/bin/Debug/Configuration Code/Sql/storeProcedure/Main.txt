@@ -1,0 +1,12 @@
+﻿{{insert}}
+{{update}}
+{{delete}}
+{{getAll}}
+{{search}}
+{{getById}}
+{{saveFromList}}
+
+
+
+
+

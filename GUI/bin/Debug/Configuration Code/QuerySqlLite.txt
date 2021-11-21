@@ -1,0 +1,1 @@
+select IIF(count(*)>0, +insert,"") from abc

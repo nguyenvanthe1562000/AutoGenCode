@@ -1,0 +1,3 @@
+﻿	Insert{{nametable}}() {
+    return this.http.post(this.baseURL, {{parameters.frombody}});
+  }

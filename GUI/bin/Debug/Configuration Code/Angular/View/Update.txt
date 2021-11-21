@@ -1,0 +1,16 @@
+<form novalidate autocomplete="off" #form="ngForm" (submit)="update(form)">
+<input type="hidden" name="paymentDetailId" [value]="service.formData.paymentDetailId" />
+{{begin.insertProduct}}
+    <div class="form-group">
+        <label>{{datamember}}</label>
+        <input class="form-control form-control-lg" placeholder="{{datamember}}" name="{{datamember}}"
+            #{{datamember}}="ngModel" [(ngModel)]="service.formData.{{datamember}}"
+            required [class.invalid]="{{datamember}}.invalid && {{datamember}}.touched">
+    </div>
+{{end.insertProduct}}
+{{paste.insertProduct}}
+ 
+    <div class="form-group">
+        <button class="btn btn-info btn-lg btn-block" type="submit" [disabled]="form.invalid">SUBMIT</button>
+    </div>
+</form>

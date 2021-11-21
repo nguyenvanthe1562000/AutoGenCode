@@ -1,0 +1,11 @@
+
+{
+
+"API"           			:"ShopVT.Controllers.Admin",
+"SERVICE"  			:"Service.Admin.Service",
+"DATAACCESS" 			 :"Data.Reponsitory",
+"INTERFACE"	:"Service.Admin.Service.Interface",
+"INTERFACEDATAACCESS"	:"Data.Reponsitory.Interface",
+"DROPDOWNOPTION"	:"Data.Reponsitory.Interface",
+"MODEL"   			 :"Model.Model"
+}

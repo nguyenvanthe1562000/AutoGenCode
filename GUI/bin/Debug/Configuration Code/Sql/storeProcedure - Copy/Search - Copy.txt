@@ -1,0 +1,39 @@
+﻿
+--CREATE PROCEDURE [dbo].[{{nametable}}_search] 
+--	( {{store.parameter_1}} )
+--AS
+--    BEGIN 
+--		IF(@lang = 'e')
+--			BEGIN	
+--				SELECT {{store.tablefield}},{{store.lang_e}}
+--				FROM {{nametable}}
+--				WHERE  {{store.required_1}} AND {{store.lang_e_check}} 
+--				{{store.order}}
+--			END
+--		ELSE
+--			BEGIN
+--				SELECT {{store.tablefield}}, {{store.lang_v}}
+--				FROM  {{nametable}}
+--				WHERE  {{store.required_1}} AND {{store.lang_e_check}}
+--				{{store.order}}
+--			END
+--    END;
+--
+CREATE PROCEDURE [dbo].[{{nametable}}_search] 
+	( @Name nvarchar(256) )
+AS
+BEGIN	
+SELECT {{store.tablefield}}
+FROM {{nametable}}
+ {{store.required_1}} LIKE '%' + @Name+ '%'
+{{store.order}}
+    END;
+GO
+
+
+
+
+
+
+
+

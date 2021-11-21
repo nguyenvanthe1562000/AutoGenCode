@@ -1,0 +1,20 @@
+﻿CREATE PROCEDURE [dbo].[{{nametable}}_get_List_dropdown]
+{{store.parameter_1}}
+AS
+    BEGIN
+        IF(@lang = 'e')
+            BEGIN
+                SELECT {{store.tablefield}}, {{store.lang_e}}
+                FROM {{nametable}}
+                WHERE {{store.required_1}}
+                {{store.order}}
+        END;
+            ELSE
+            BEGIN
+               SELECT {{store.tablefield}}, {{store.lang_v}}
+                FROM {{nametable}}
+                WHERE {{store.required_1}}
+               {{store.order}}
+        END;
+    END;
+GO

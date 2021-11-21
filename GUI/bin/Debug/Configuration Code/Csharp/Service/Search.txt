@@ -1,0 +1,5 @@
+﻿
+        public async Task<List<{{class.model}}>> Search( {{parameters.init}})
+        {
+            return await {{variable.repository}}.Search({{parameters.pass}});
+        }

@@ -1,0 +1,15 @@
+﻿using Microsoft.AspNet.Identity.EntityFramework;
+using {{namespace}}.Models;
+
+namespace {{namespace}}.Data
+{
+    public class {{nametable}}DbContext : DbContext 
+    {
+        public  {{nametable}}DbContext() : base(" {{nametable}}DbContext")
+        {
+            
+        }
+	{{entity}}
+     }
+}
+

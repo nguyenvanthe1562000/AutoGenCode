@@ -1,0 +1,10 @@
+﻿CREATE PROCEDURE [dbo].[{{nametable}}_get_by_id]
+{{store.parameter_1}}
+AS
+    BEGIN
+        SELECT 
+            {{store.tablefield}}
+        FROM {{nametable}} 
+        WHERE {{store.required_1}}
+    END;
+GO

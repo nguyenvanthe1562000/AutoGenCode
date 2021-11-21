@@ -1,0 +1,9 @@
+CREATE PROCEDURE [dbo].[{{nametable}}_get_all]
+{{store.parameter_1}}
+AS
+    BEGIN
+        SELECT 
+            {{store.tablefield}}
+        FROM {{nametable}} 
+    END;
+GO

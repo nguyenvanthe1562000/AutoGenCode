@@ -1,0 +1,212 @@
+﻿[
+    {
+        "Language": "Angular",
+        "Layer": "Component",
+        "Method": {
+            "Insert": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Angular\\Component\\Insert.txt",
+            "Update": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Angular\\Component\\Update.txt",
+            "Delete": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Angular\\Component\\Delete.txt",
+            "GetById": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Angular\\Component\\GetById.txt",
+            "GetAll": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Angular\\Component\\GetAll.txt",
+            "Search": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Angular\\Component\\Search.txt",
+            "DropDown": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Angular\\Component\\dropdown.txt",
+            "saveFromList": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\DataAccess\\SaveFromList.txt",
+            "Main": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Angular\\Component\\Main.txt"
+        }
+    },
+    {
+        "Language": "Angular",
+        "Layer": "DropDownOption",
+        "Method": {
+            "Insert": null,
+            "Update": null,
+            "Delete": null,
+            "GetById": null,
+            "GetAll": null,
+            "Search": null,
+            "DropDown": null,
+            "saveFromList": null,
+            "Main": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Angular\\DropDownOption\\Main.txt"
+        }
+    },
+    {
+        "Language": "Angular",
+        "Layer": "interface",
+        "Method": {
+            "Insert": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Angular\\interface\\IInsert.txt",
+            "Update": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Angular\\interface\\IUpdate.txt",
+            "Delete": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Angular\\interface\\IDelete.txt",
+            "GetById": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Angular\\interface\\IGetById.txt",
+            "GetAll": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Angular\\interface\\IGetAll.txt",
+            "Search": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Angular\\interface\\ISearch.txt",
+            "DropDown": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Angular\\interface\\IDropdown.txt",
+            "saveFromList": null,
+            "Main": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Angular\\interface\\Main.txt"
+        }
+    },
+    {
+        "Language": "Angular",
+        "Layer": "Model",
+        "Method": {
+            "Insert": null,
+            "Update": null,
+            "Delete": null,
+            "GetById": null,
+            "GetAll": null,
+            "Search": null,
+            "DropDown": null,
+            "saveFromList": null,
+            "Main": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Angular\\Model\\Main.txt"
+        }
+    },
+    {
+        "Language": "Angular",
+        "Layer": "Service",
+        "Method": {
+            "Insert": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Angular\\Service\\Insert.txt",
+            "Update": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Angular\\Service\\Update.txt",
+            "Delete": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Angular\\Service\\Delete.txt",
+            "GetById": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Angular\\Service\\GetById.txt",
+            "GetAll": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Angular\\Service\\GetAll.txt",
+            "Search": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Angular\\Service\\Search.txt",
+            "DropDown": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Angular\\Service\\dropdown.txt",
+            "saveFromList": null,
+            "Main": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Angular\\Service\\Main.txt"
+        }
+    },
+    {
+        "Language": "Angular",
+        "Layer": "View",
+        "Method": {
+            "Insert": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Angular\\View\\Insert.txt",
+            "Update": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Angular\\View\\Update.txt",
+            "Delete": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Angular\\View\\Delete.txt",
+            "GetById": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Angular\\View\\GetById.txt",
+            "GetAll": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Angular\\View\\GetAll.txt",
+            "Search": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Angular\\View\\Search.txt",
+            "DropDown": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Angular\\View\\dropdown.txt",
+            "saveFromList": null,
+            "Main": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Angular\\View\\Main.txt"
+        }
+    },
+    {
+        "Language": "Csharp",
+        "Layer": "Api",
+        "Method": {
+            "Insert": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\Api\\Insert.txt",
+            "Update": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\Api\\Update.txt",
+            "Delete": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\Api\\Delete.txt",
+            "GetById": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\Api\\GetById.txt",
+            "GetAll": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\Api\\GetAll.txt",
+            "Search": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\Api\\Search.txt",
+            "DropDown": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\Api\\dropdown.txt",
+            "saveFromList": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\Api\\savefromlist.txt",
+            "Main": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\Api\\Main.txt"
+        }
+    },
+    {
+        "Language": "Csharp",
+        "Layer": "Api - Copy",
+        "Method": {
+            "Insert": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\Api - Copy\\Insert.txt",
+            "Update": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\Api - Copy\\Update.txt",
+            "Delete": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\Api - Copy\\Delete.txt",
+            "GetById": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\Api - Copy\\GetById.txt",
+            "GetAll": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\Api - Copy\\GetAll.txt",
+            "Search": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\Api - Copy\\Search.txt",
+            "DropDown": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\Api - Copy\\dropdown.txt",
+            "saveFromList": null,
+            "Main": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\Api - Copy\\Main.txt"
+        }
+    },
+    {
+        "Language": "Csharp",
+        "Layer": "DataAccess",
+        "Method": {
+            "Insert": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\DataAccess\\Insert.txt",
+            "Update": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\DataAccess\\Update.txt",
+            "Delete": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\DataAccess\\Delete.txt",
+            "GetById": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\DataAccess\\GetById.txt",
+            "GetAll": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\DataAccess\\GetAll.txt",
+            "Search": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\DataAccess\\Search.txt",
+            "DropDown": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\DataAccess\\dropdown.txt",
+            "saveFromList": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\DataAccess\\SaveFromList.txt",
+            "Main": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\DataAccess\\Main.txt"
+        }
+    },
+    {
+        "Language": "Csharp",
+        "Layer": "DropDownOption",
+        "Method": {
+            "Insert": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\interface\\IInsert.txt",
+            "Update": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\interface\\IUpdate.txt",
+            "Delete": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\interface\\IDelete.txt",
+            "GetById": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\interface\\IGetById.txt",
+            "GetAll": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\interface\\IGetAll.txt",
+            "Search": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\interface\\ISearch.txt",
+            "DropDown": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\interface\\IPagingResult.txt",
+            "saveFromList": "",
+            "Main": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\DropDownOption\\Main.txt"
+        }
+    },
+    {
+        "Language": "Csharp",
+        "Layer": "interface",
+        "Method": {
+            "Insert": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\interface\\IInsert.txt",
+            "Update": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\interface\\IUpdate.txt",
+            "Delete": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\interface\\IDelete.txt",
+            "GetById": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\interface\\IGetById.txt",
+            "GetAll": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\interface\\IGetAll.txt",
+            "Search": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\interface\\ISearch.txt",
+            "DropDown": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\interface\\IDropdown.txt",
+            "saveFromList": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\interface\\ISavefromList.txt",
+            "Main": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\interface\\Main.txt"
+        }
+    },
+    {
+        "Language": "Csharp",
+        "Layer": "Model",
+        "Method": {
+            "Insert": null,
+            "Update": null,
+            "Delete": null,
+            "GetById": null,
+            "GetAll": null,
+            "Search": null,
+            "DropDown": null,
+            "saveFromList": null,
+            "Main": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\Model\\Main.txt"
+        }
+    },
+    {
+        "Language": "Csharp",
+        "Layer": "Service",
+        "Method": {
+            "Insert": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\Service\\Insert.txt",
+            "Update": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\Service\\Update.txt",
+            "Delete": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\Service\\Delete.txt",
+            "GetById": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\Service\\GetById.txt",
+            "GetAll": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\Service\\GetAll.txt",
+            "Search": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\Service\\Search.txt",
+            "DropDown": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\Service\\dropdown.txt",
+            "saveFromList": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\Service\\SaveFromList.txt",
+            "Main": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Csharp\\Service\\Main.txt"
+        }
+    },
+    {
+        "Language": "Sql",
+        "Layer": "storeProcedure",
+        "Method": {
+            "Insert": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Sql\\storeProcedure\\insert.txt",
+            "Update": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Sql\\storeProcedure\\update.txt",
+            "Delete": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Sql\\storeProcedure - Copy\\Delete.txt",
+            "GetById": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Sql\\storeProcedure\\GetById.txt",
+            "GetAll": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Sql\\storeProcedure\\GetAll.txt",
+            "Search": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Sql\\storeProcedure - Copy\\Search - Copy.txt",
+            "DropDown": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Sql\\storeProcedure\\dropdown.txt",
+            "saveFromList": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Sql\\storeProcedure - Copy\\SaveFromList.txt",
+            "Main": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Sql\\storeProcedure\\Main.txt"
+        }
+    }
+]

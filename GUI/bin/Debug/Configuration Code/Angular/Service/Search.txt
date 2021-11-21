@@ -1,0 +1,5 @@
+﻿ search({{parameters.fromuri}}) {
+     this.http.get(`${this.baseURL}/{{parameters.route}}`)
+	 .toPromise()
+	 .then(res =>this.list = res as {{nametable}}[]);
+  }

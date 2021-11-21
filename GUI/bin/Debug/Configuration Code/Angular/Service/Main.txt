@@ -1,0 +1,34 @@
+﻿import { Injectable } from '@angular/core';
+import { {{nametable}} } from './payment-detail.model';
+import { HttpClient } from "@angular/common/http";
+
+@Injectable({
+  providedIn: 'root'
+})
+export class {{class.service}} {
+
+  constructor(private http: HttpClient) { }
+
+  readonly baseURL = 'http://localhost:54751/api/{{nametable}}'
+  {{nametable}}: {{nametable}} = new {{nametable}}();
+  list: PaymentDetail[];
+
+	{{insert}}
+	{{update}}
+	{{delete}}
+	{{getAll}}
+	{{search}}
+	
+	{{saveFromList}}
+	{{getById}}
+
+  refreshList() {
+    this.http.get(this.baseURL)
+      .toPromise()
+      .then(res =>this.list = res as PaymentDetail[]);
+  }
+
+
+}
+
+

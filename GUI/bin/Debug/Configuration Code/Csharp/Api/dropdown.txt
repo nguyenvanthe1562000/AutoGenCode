@@ -1,0 +1,21 @@
+﻿
+ [ClaimRequirement(ClaimFunction.ADMINACCOUNT, ClaimAction.CANCREATE)]
+        [HttpPost]
+        [Route("Paging")]
+        public async Task<IActionResult> Paging([FromBody] PagingRequestBase pagingRequest)
+        {
+            try
+            {
+                var response = await {{variable.service}}.Paging(pagingRequest);
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest("Error at method: GetAllForPaging - PostApi," + ex.InnerException.InnerException.Message + "");
+            }
+        }
+
+
+
+
+

@@ -1,0 +1,1 @@
+Task<bool> Update( {{class.model}} model, int userId);         

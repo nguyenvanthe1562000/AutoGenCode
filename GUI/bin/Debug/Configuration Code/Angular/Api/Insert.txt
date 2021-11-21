@@ -1,0 +1,27 @@
+﻿        [Route("create-{{nametable}}")]
+        [HttpPost]
+        public ResponseMessage<{{class.model}} > Create({{parameters.frombody}})
+        {
+            var response = new ResponseMessage<{{class.model}}>();
+            try
+            {
+                model.created_by_user_id = CurrentUserId;
+                model.facility_id = CurrentFacilityId;
+                var resultBUS = _employeeBusiness.Create(model);
+                if (resultBUS)
+                {
+                    response.Data = model;
+                    response.MessageCode = MessageCodes.CreateSuccessfully;
+                }
+                else
+                {
+                    response.MessageCode = MessageCodes.CreateFail;
+                }
+            }
+            catch (Exception ex)
+            {
+                response.MessageCode = ex.Message;
+            }
+            return response;
+        }
+

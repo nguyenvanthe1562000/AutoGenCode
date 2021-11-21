@@ -1,0 +1,18 @@
+﻿ <table class="table">
+            <thead class="thead-light">
+               
+                   {{gen.fieldname}}
+               
+            </thead>
+            <tbody>
+              
+                    {{gen.fieldvalue}}  
+                    <td>
+                        <i class="far fa-trash-alt fa-lg text-danger" (click)="onDelete(pd.paymentDetailId)"></i>
+	       {{delete}}
+                    </td>
+            </tbody>
+</table>
+
+
+

@@ -1,0 +1,6 @@
+﻿
+        public async List<{{class.model}}> GetAll()
+        {
+            var result = {{variable.repository}}.GetAll();
+            return await result;
+        }

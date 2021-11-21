@@ -1,0 +1,15 @@
+﻿[HttpPost]
+[Route("insert")]
+public IHttpActionResult  Insert({{parameters.frombody}})
+{
+      try
+      {
+            var response = {{variable.service}}.Insert(model);
+            return Ok(response);
+      }
+      catch (Exception ex)
+      {
+            return BadRequest("Error at method: GetAllForPaging - PostApi," + ex.InnerException.InnerException.Message + "");
+      }
+}
+        

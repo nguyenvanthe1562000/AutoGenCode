@@ -1,0 +1,27 @@
+﻿
+ public async Task<bool> Insert({{class.model}} model, int userId)
+        {
+                  try
+            {                  
+                var result =  await _dbHelper.ExecuteScalarSProcedureWithTransactionAsync("{{nametable}}_create",{{parameters.modelstore}},"@user_id", userId);
+                if (!string.IsNullOrEmpty(result.message.ToString()))
+                {
+                    return false;
+                    throw new Exception(result.message);
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+   
+
+
+
+
+
+
+
+

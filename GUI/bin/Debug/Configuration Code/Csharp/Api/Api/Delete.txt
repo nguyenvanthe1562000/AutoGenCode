@@ -1,0 +1,15 @@
+﻿[HttpDelete]
+[Route("delete/{{{parameters.route}}}")]
+public IActionResult Delete({{parameters.fromuri}})
+{
+    try
+    {
+        var response = {{variable.service}}.Delete({{parameters.pass}});
+        return Ok(response);
+    }
+    catch (Exception ex)
+    {
+        return BadRequest("Error at method: DropDown - {{nametable}}Api," + ex.InnerException.InnerException.Message + "");
+    }
+}
+

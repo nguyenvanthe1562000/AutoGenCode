@@ -1,0 +1,23 @@
+﻿CREATE PROCEDURE [dbo].[{{nametable}}_update]
+{{store.parameter_1}}
+AS
+    BEGIN
+        IF(NOT EXISTS
+        (
+            SELECT 1
+            FROM {{nametable}}
+            WHERE {{store.required_1}}
+        ))
+            BEGIN
+                SELECT 'MESSAGE.not_exist';
+        END;
+            ELSE
+            BEGIN
+                UPDATE {{nametable}}
+                  SET 
+                     {{store.update}}
+                WHERE {{store.required_1}};
+              
+        END;
+    END;
+GO

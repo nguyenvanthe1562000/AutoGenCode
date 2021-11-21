@@ -1,0 +1,16 @@
+
+[HttpGet]
+[Route("search/{{parameters.route}}")]
+public IHttpActionResult  Search({{parameters.fromuri}})
+{
+      try
+      {
+                var response = {{variable.service}}.search({{parameters.pass}});
+                return Ok(response);
+      }
+      catch (Exception ex)
+      {
+             return BadRequest("Error at method: Search - {{nametable}}Api," + ex.InnerException.InnerException.Message + "");
+      }
+}
+        

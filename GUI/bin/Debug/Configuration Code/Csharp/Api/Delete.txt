@@ -1,0 +1,22 @@
+﻿[HttpDelete]
+[Route("delete/{{parameters.route}}")]
+ [ClaimRequirement(ClaimFunction.FUNCTION, ClaimAction.CANDELETE)]
+public async Task<IActionResult> Delete({{parameters.fromuri}})
+{
+    try
+    {
+        var response =await {{variable.service}}.Delete({{parameters.pass}},GetUserId());
+        return Ok(response);
+    }
+    catch (Exception ex)
+    {
+       return BadRequest("Error at method: Delete- {{nametable}}Api," + ex.InnerException.InnerException.Message + "");
+
+    }
+}
+
+
+
+
+
+

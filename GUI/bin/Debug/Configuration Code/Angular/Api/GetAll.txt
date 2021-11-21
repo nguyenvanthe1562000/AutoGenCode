@@ -1,0 +1,14 @@
+        [HttpGet]
+        [Route("get-all")]
+        public IActionResult GetAll()
+        {
+            try
+            {
+                var response = {{variable.service}}.Items();
+                return Ok(response);
+            }   
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+        }

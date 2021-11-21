@@ -1,0 +1,14 @@
+﻿[HttpGet]
+[Route("GetById/{{parameters.route}}")]
+public IHttpActionResult GetById ({{parameters.fromuri}})
+{
+    try
+    {
+        var responseData = {{variable.service}}.GetById({{parameters.pass}});
+        return Ok(responseData);
+    }
+    catch (Exception ex)
+    {
+        return BadRequest("Error at method: GetById - {{nametable}}Api," + ex.InnerException.InnerException.Message + "");
+    }
+}

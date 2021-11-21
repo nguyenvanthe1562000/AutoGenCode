@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using UTEHY.DataModel;
+using UTEHY.DataAccessLayer;
+
+namespace {{namespace}}.Service
+{
+    public class {{class.service}}     {
+        private {{class.repository}} {{variable.repository}};
+        public {{class.service}}    ()
+        {
+            {{variable.repository}} = new {{class.repository}} ;
+        }
+	{{insert}}
+	{{update}}
+	{{delete}}
+	{{getAll}}
+	{{search}}
+	{{dropdown}}
+	{{saveFromList}}
+	{{getById}}
+	
+   }
+}
+
+

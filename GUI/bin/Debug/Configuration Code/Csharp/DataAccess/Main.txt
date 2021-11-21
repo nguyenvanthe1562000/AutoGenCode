@@ -1,0 +1,74 @@
+﻿using Common;
+using Common.Helper;
+using Data.Reponsitory.Interface;
+using Model.Model;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+
+namespace {{namespace}}
+{
+  public class {{class.repository}}:{{iclass.repository}},IDisposable
+   {
+        private IDatabaseHelper _dbHelper;
+        public {{class.repository}}(IDatabaseHelper databaseHelper)
+        {
+            _dbHelper = databaseHelper;
+        }
+        {{insert}}
+        {{update}}
+        {{delete}}
+        {{getAll}}
+        {{search}}
+	{{dropdown}}
+
+        {{getById}}
+	
+  private bool disposed = false;
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!disposed)
+            {
+
+                if (_dbHelper != null)
+                {
+                    _dbHelper = null;
+
+                    //GC.Collect();
+                }
+                disposed = true;
+            }
+
+        }
+        ~{{class.repository}}()
+        {
+            Dispose(false);
+
+        }
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

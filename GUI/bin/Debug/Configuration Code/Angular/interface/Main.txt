@@ -1,0 +1,19 @@
+﻿using System.Collections.Generic;
+using UTEHY.DataModel;
+namespace {{namespace}}
+
+{
+    public interface {{iclass.service}}
+    {
+    {{insert}}
+	{{update}}
+	{{delete}}
+	{{getAll}}
+	{{search}}
+
+	{{searchByString}}
+	{{getById}}
+    }
+}
+
+

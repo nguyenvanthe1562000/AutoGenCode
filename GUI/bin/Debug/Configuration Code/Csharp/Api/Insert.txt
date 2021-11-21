@@ -1,0 +1,20 @@
+﻿[HttpPost]
+[Route("insert")]
+[ClaimRequirement(ClaimFunction.CHAT, ClaimAction.CANREAD)]
+public async Task<IActionResult> Insert({{parameters.frombody}})
+{
+      try
+      {
+            var response =await {{variable.service}}.Insert(model,GetUserId());
+            return Ok(response);
+      }
+      catch (Exception ex)
+      {
+            return BadRequest("Error at method: insert - {{nametable}}Api," + ex.InnerException.InnerException.Message + "");
+      }
+}
+        
+
+
+
+

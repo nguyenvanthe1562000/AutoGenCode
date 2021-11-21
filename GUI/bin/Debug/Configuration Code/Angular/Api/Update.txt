@@ -1,0 +1,14 @@
+	[HttpPut]
+        [Route("update")]
+        public IActionResult Update({{class.model}} model)
+        {
+            try
+            {
+                var response = {{variable.service}}.Update(model);
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }

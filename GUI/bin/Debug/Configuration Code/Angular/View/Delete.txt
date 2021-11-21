@@ -1,0 +1,1 @@
+﻿<i class="far fa-trash-alt fa-lg text-danger" (click)="onDelete({{parameters.modelpass}})"></i>

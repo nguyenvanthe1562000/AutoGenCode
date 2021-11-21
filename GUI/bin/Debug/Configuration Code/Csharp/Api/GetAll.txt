@@ -1,0 +1,17 @@
+﻿[HttpGet]
+[Route("get-all")]
+[ClaimRequirement(ClaimFunction.FUNCTION, ClaimAction.CANREAD)]
+ public async Task<IActionResult> GetAll()
+{
+    try
+    {
+        var response =await {{variable.service}}.GetAll();
+        return Ok(response);
+    }   
+    catch(Exception ex)
+    {
+        return BadRequest("Error at method: GetAll - {{nametable}}Api," + ex.InnerException.InnerException.Message + "");
+    }
+}
+
+

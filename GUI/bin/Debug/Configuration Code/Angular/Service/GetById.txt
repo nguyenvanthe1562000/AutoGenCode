@@ -1,0 +1,3 @@
+  GetById({{parameters.fromuri}}) {
+    return this.http.get(`${this.baseURL}/{{parameters.route}}`);
+  }

@@ -1,0 +1,13 @@
+﻿
+  insertRecord(form: NgForm) {
+
+    this.service.postPaymentDetail().subscribe(
+      res => {
+        this.resetForm(form);
+        this.service.refreshList();
+        this.toastr.success('Submitted successfully', 'Payment Detail Register')
+      },
+      err => { console.log(err); }
+    );
+  }
+

@@ -1,0 +1,237 @@
+[
+    {
+        "Layer": "Api",
+        "Method": "ControllerApiMain",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Api\\ControllerApiMain.txt"
+    },
+    {
+        "Layer": "Api",
+        "Method": "Delete",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Api\\Delete.txt"
+    },
+    {
+        "Layer": "Api",
+        "Method": "dropdown",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Api\\dropdown.txt"
+    },
+    {
+        "Layer": "Api",
+        "Method": "GetAll",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Api\\GetAll.txt"
+    },
+    {
+        "Layer": "Api",
+        "Method": "GetById",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Api\\GetById.txt"
+    },
+    {
+        "Layer": "Api",
+        "Method": "Insert",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Api\\Insert.txt"
+    },
+    {
+        "Layer": "Api",
+        "Method": "Search",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Api\\Search.txt"
+    },
+    {
+        "Layer": "Api",
+        "Method": "SearchByString",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Api\\SearchByString.txt"
+    },
+    {
+        "Layer": "Api",
+        "Method": "Update",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Api\\Update.txt"
+    },
+    {
+        "Layer": "DataAccess",
+        "Method": "DataAccessMain",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\DataAccess\\DataAccessMain.txt"
+    },
+    {
+        "Layer": "DataAccess",
+        "Method": "Delete",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\DataAccess\\Delete.txt"
+    },
+    {
+        "Layer": "DataAccess",
+        "Method": "dropdown",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\DataAccess\\dropdown.txt"
+    },
+    {
+        "Layer": "DataAccess",
+        "Method": "GetAll",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\DataAccess\\GetAll.txt"
+    },
+    {
+        "Layer": "DataAccess",
+        "Method": "GetById",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\DataAccess\\GetById.txt"
+    },
+    {
+        "Layer": "DataAccess",
+        "Method": "Insert",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\DataAccess\\Insert.txt"
+    },
+    {
+        "Layer": "DataAccess",
+        "Method": "Search",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\DataAccess\\Search.txt"
+    },
+    {
+        "Layer": "DataAccess",
+        "Method": "SearchByString",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\DataAccess\\SearchByString.txt"
+    },
+    {
+        "Layer": "DataAccess",
+        "Method": "Update",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\DataAccess\\Update.txt"
+    },
+    {
+        "Layer": "interface",
+        "Method": "IDelete",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\interface\\IDelete.txt"
+    },
+    {
+        "Layer": "interface",
+        "Method": "IDropdown",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\interface\\IDropdown.txt"
+    },
+    {
+        "Layer": "interface",
+        "Method": "IGetAll",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\interface\\IGetAll.txt"
+    },
+    {
+        "Layer": "interface",
+        "Method": "IGetById",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\interface\\IGetById.txt"
+    },
+    {
+        "Layer": "interface",
+        "Method": "IInsert",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\interface\\IInsert.txt"
+    },
+    {
+        "Layer": "interface",
+        "Method": "InterfaceMain",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\interface\\InterfaceMain.txt"
+    },
+    {
+        "Layer": "interface",
+        "Method": "ISearch",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\interface\\ISearch.txt"
+    },
+    {
+        "Layer": "interface",
+        "Method": "ISearchByString",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\interface\\ISearchByString.txt"
+    },
+    {
+        "Layer": "interface",
+        "Method": "IUpdate",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\interface\\IUpdate.txt"
+    },
+    {
+        "Layer": "Model",
+        "Method": "Model",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Model\\Model.txt"
+    },
+    {
+        "Layer": "Service",
+        "Method": "Delete",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Service\\Delete.txt"
+    },
+    {
+        "Layer": "Service",
+        "Method": "dropdown",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Service\\dropdown.txt"
+    },
+    {
+        "Layer": "Service",
+        "Method": "GetAll",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Service\\GetAll.txt"
+    },
+    {
+        "Layer": "Service",
+        "Method": "GetById",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Service\\GetById.txt"
+    },
+    {
+        "Layer": "Service",
+        "Method": "Insert",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Service\\Insert.txt"
+    },
+    {
+        "Layer": "Service",
+        "Method": "Search",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Service\\Search.txt"
+    },
+    {
+        "Layer": "Service",
+        "Method": "SearchByString",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Service\\SearchByString.txt"
+    },
+    {
+        "Layer": "Service",
+        "Method": "ServiceMain",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Service\\ServiceMain.txt"
+    },
+    {
+        "Layer": "Service",
+        "Method": "Update",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\Service\\Update.txt"
+    },
+    {
+        "Layer": "storeProcedure",
+        "Method": "Delete",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\storeProcedure\\Delete.txt"
+    },
+    {
+        "Layer": "storeProcedure",
+        "Method": "deleteMulti",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\storeProcedure\\deleteMulti.txt"
+    },
+    {
+        "Layer": "storeProcedure",
+        "Method": "dropdown",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\storeProcedure\\dropdown.txt"
+    },
+    {
+        "Layer": "storeProcedure",
+        "Method": "GetAll",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\storeProcedure\\GetAll.txt"
+    },
+    {
+        "Layer": "storeProcedure",
+        "Method": "GetById",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\storeProcedure\\GetById.txt"
+    },
+    {
+        "Layer": "storeProcedure",
+        "Method": "insert",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\storeProcedure\\insert.txt"
+    },
+    {
+        "Layer": "storeProcedure",
+        "Method": "SaveFromList",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\storeProcedure\\SaveFromList.txt"
+    },
+    {
+        "Layer": "storeProcedure",
+        "Method": "Search",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\storeProcedure\\Search.txt"
+    },
+    {
+        "Layer": "storeProcedure",
+        "Method": "StoreProcedureMain",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\storeProcedure\\StoreProcedureMain.txt"
+    },
+    {
+        "Layer": "storeProcedure",
+        "Method": "update",
+        "Path": "C:\\Users\\nguye\\source\\repos\\Generate_Code\\automatic-code-generation\\GUI\\bin\\Debug\\Configuration Code\\storeProcedure\\update.txt"
+    }
+]

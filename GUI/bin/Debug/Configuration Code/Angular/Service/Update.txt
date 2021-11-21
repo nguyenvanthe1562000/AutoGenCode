@@ -1,0 +1,3 @@
+﻿Update{{nametable}}( {{parameters.fromuri}} ) {
+    return this.http.put(`${this.baseURL}/put{{nametable}}/{{parameters.route}}`, {{parameters.frombody}});
+  }

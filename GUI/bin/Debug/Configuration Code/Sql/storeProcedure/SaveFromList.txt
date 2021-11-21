@@ -1,0 +1,26 @@
+﻿CREATE PROCEDURE [dbo].[sp_{{nametable}}_save_from_List]
+(
+   {{store.parameter_1}}
+)
+AS
+    BEGIN
+        IF(@Listjson_{{nametable}} IS NOT NULL)
+            BEGIN
+                ;WITH allRows AS (
+	Select {{store.selectjsonfield}} 
+                        FROM    {{store.fromjson}} 
+	)
+                     UPDATE employee
+                       SET 
+                           {{store.update}}
+                     FROM allRows
+                     WHERE {{store.required_1}}
+        END;
+        SELECT '';
+    END;
+GO
+
+
+
+
+

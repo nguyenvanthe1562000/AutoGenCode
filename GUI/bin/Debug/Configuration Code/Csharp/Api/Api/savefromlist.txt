@@ -1,0 +1,14 @@
+[HttpPut]
+[Route("save-from-list")]
+public IHttpActionResult  SaveFromList({{parameters.frombody}})
+{
+      try
+      {
+            var response = {{variable.service}}.Insert(model);
+            return Ok(response);
+      }
+      catch (Exception ex)
+      {
+            return BadRequest("Error at method: SaveFromList - {{nametable}}Api," + ex.InnerException.InnerException.Message + "");
+      }
+}

@@ -1,0 +1,46 @@
+﻿CREATE PROCEDURE [dbo].[{{nametable}}_create]
+	({{store.parameter_1}} , @user_id int)
+
+
+AS
+    BEGIN
+	BEGIN TRY	
+	IF(EXISTS
+	(
+		SELECT 1
+		FROM {{nametable}}
+		 {{store.required_1}}
+	))
+	BEGIN
+		SELECT 'MESSAGE.{{nametable}}_exist';
+	END;
+	ELSE
+		BEGIN
+		EXEC sp_set_session_context 'user_id', @user_id; 
+		INSERT INTO {{nametable}}
+		(
+			{{store.insert_1}}
+		)
+		VALUES
+		(
+			{{store.insert_2}}
+		);
+		END;
+	END TRY
+
+	-- If any error
+	BEGIN CATCH
+		SELECT 'MESSAGE. failed';
+	END CATCH
+    END;
+
+GO
+
+
+
+
+
+
+
+
+

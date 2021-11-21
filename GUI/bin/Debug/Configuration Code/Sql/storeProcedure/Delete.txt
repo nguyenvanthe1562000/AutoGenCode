@@ -1,0 +1,24 @@
+﻿CREATE PROCEDURE [dbo].[{{nametable}}_delete]
+(
+	{{store.parameter_1}}
+)
+AS
+    BEGIN
+        IF(NOT EXISTS
+        (
+            SELECT 1
+            FROM {{nametable}}
+            WHERE {{store.required_1}}
+        ))
+            BEGIN
+                SELECT 'MESSAGE.not_exist';
+        END;
+            ELSE
+            EXEC sp_set_session_context 'user_id', @user_id; 
+            BEGIN
+			    UPDATE {{nametable}}
+                SET IsActive=0 
+                WHERE {{store.required_1}}
+            END;
+    END;
+GO;

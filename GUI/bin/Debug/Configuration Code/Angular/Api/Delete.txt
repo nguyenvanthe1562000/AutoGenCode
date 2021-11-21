@@ -1,0 +1,14 @@
+	[HttpDelete]
+        [Route("delete-{{{parameters.init}}}")]
+        public IActionResult Delete({{parameters.init}})
+        {
+            try
+            {
+                var response = {{variable.service}}.Delete({{parameters.init}});
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }

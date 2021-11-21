@@ -1,0 +1,19 @@
+﻿        [HttpPut]
+        [Route("Update")]
+[ClaimRequirement(ClaimFunction.FUNCTION, ClaimAction.CANUPDATE)]
+         public async Task<IActionResult> Update ({{parameters.frombody}})
+        {
+            try
+            {
+                var responseData =await {{variable.service}}.Update({{parameters.pass}},GetUserId());
+                return Ok(responseData);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest("Error at method: Update - {{nametable}}Api," + ex.InnerException.InnerException.Message + "");
+            }
+        }    
+
+
+
+

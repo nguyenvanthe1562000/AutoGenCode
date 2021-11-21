@@ -1,0 +1,14 @@
+        [HttpPut]
+        [Route("Update")]
+        public IHttpActionResult Update ({{parameters.frombody}})
+        {
+            try
+            {
+                var responseData = {{variable.service}}.Update({{parameters.pass}});
+                return Ok(responseData);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest("Error at method: GetById - {{nametable}}Api," + ex.InnerException.InnerException.Message + "");
+            }
+        }    

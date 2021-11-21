@@ -1,0 +1,13 @@
+﻿onDelete({{parameters.init}}) {
+    if (confirm('Are you sure to delete this record?')) {
+      this.service.delete{{nametable}}({{parameters.pass}})
+        .subscribe(
+          res => {
+            this.service.refreshList();
+            this.toastr.error("Deleted successfully", 'Payment Detail Register');
+          },
+          err => { console.log(err) }
+        )
+    }
+  }
+

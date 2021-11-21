@@ -1,0 +1,10 @@
+     /// <summary>
+        /// Get information from the table UomRef and push it into a list of type DropdownOptionModel
+        /// </summary>
+        /// <param name="lang">Language used to display data</param> 
+        /// <returns></returns>
+        public List<{{class.model}}> GetListDropdown({{parameters.init}})
+        {
+            var result = {{variable.repository}}.GetListDropdown({{parameters.pass}});
+            return result == null ? null : result;
+        }

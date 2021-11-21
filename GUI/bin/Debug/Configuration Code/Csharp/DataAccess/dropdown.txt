@@ -1,0 +1,21 @@
+﻿public async Task<PagedResultBase> Paging(PagingRequestBase pagingRequest)
+        {
+            try
+            {
+
+                var dt = await _dbHelper.ExecuteSProcedureReturnDataTableAsync("usp_sys_PagingForTable", "@PageSize", pagingRequest.PageSize, "@PageIndex", pagingRequest.PageIndex, "@orderby", pagingRequest.OrderBy, "@table", "{{nametable}}");
+                if (!string.IsNullOrEmpty(dt.message))
+                {
+                    throw new Exception(dt.message);
+                }
+                var list = await dt.Item2.ConvertToAsync<PagedResultBase>();
+                return list.ToList().FirstOrDefault();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+

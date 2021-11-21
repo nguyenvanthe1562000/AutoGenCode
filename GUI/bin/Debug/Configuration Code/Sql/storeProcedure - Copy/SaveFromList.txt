@@ -1,0 +1,37 @@
+﻿CREATE PROCEDURE [dbo].[{{nametable}}_save_from_list]
+  ( {{store.parameter_1}}, @user_id int)
+
+AS
+    BEGIN
+        IF(@Listjson_{{nametable}} IS NOT NULL)
+            BEGIN
+	EXEC sp_set_session_context 'user_id', @user_id; 
+                WITH allRows
+                     AS (
+	        Select {{store.selectjsonfield}} 
+                        FROM    {{store.fromjson}} )
+                     UPDATE {{nametable}}
+                       SET 
+                           {{store.update}}
+                     FROM allRows
+                    {{store.required_1}}
+        END;
+        SELECT '';
+    END;
+GO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

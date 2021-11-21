@@ -1,0 +1,11 @@
+C:\Users\nguye\source\repos\Generate_Code\automatic-code-generation\Common\bin\Release\Common.dll
+C:\Users\nguye\source\repos\Generate_Code\automatic-code-generation\Common\bin\Release\Common.pdb
+C:\Users\nguye\source\repos\Generate_Code\automatic-code-generation\Common\bin\Release\Model.dll
+C:\Users\nguye\source\repos\Generate_Code\automatic-code-generation\Common\bin\Release\Newtonsoft.Json.dll
+C:\Users\nguye\source\repos\Generate_Code\automatic-code-generation\Common\bin\Release\Model.pdb
+C:\Users\nguye\source\repos\Generate_Code\automatic-code-generation\Common\bin\Release\Newtonsoft.Json.xml
+C:\Users\nguye\source\repos\Generate_Code\automatic-code-generation\Common\obj\Release\Common.csprojAssemblyReference.cache
+C:\Users\nguye\source\repos\Generate_Code\automatic-code-generation\Common\obj\Release\Common.csproj.CoreCompileInputs.cache
+C:\Users\nguye\source\repos\Generate_Code\automatic-code-generation\Common\obj\Release\Common.csproj.CopyComplete
+C:\Users\nguye\source\repos\Generate_Code\automatic-code-generation\Common\obj\Release\Common.dll
+C:\Users\nguye\source\repos\Generate_Code\automatic-code-generation\Common\obj\Release\Common.pdb

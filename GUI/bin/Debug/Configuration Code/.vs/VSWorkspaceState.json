@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Api",
+    "\\DataAccess",
+    "\\interfaceDAL&BLL",
+    "\\Service",
+    "\\storeProcedure"
+  ],
+  "SelectedNode": "\\storeProcedure\\deleteMulti.txt",
+  "PreviewInSolutionExplorer": false
+}
