@@ -1,2 +1,0 @@
-﻿ Task<bool>  Delete( {{parameters.init}}, int userId);
-

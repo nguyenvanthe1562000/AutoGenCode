@@ -1,9 +1,0 @@
-﻿   public async Task<PagedResultBase> Paging(PagingRequestBase pagingRequest)
-        {
-            return await {{variable.repository}}.Paging(pagingRequest);
-        }
-
-
-
-
-

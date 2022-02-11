@@ -1,3 +1,0 @@
-﻿Task<List<{{class.model}}>> Search({{parameters.init}});
-  
-

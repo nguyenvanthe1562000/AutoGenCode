@@ -1,5 +1,0 @@
-﻿
-        public bool SavefromList({{parameters.init}})
-        {
-            return {{variable.repository}}.SavefromList({{parameters.pass}});
-        }

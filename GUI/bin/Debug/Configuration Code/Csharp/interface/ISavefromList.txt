@@ -1,2 +1,0 @@
-﻿bool SavefromList({{parameters.init}});
-    

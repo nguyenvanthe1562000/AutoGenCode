@@ -141,7 +141,45 @@ namespace WindowsFormsApp1
             }
             else if (rad_View.Checked)
             {
+                if (ckb_DefaultNamespace.Checked)
+                {
+                    txt_Namespace.Text = GetDefaultNameSpace();
+                }
+                _table = lbx_Table.SelectedValue.ToString();
+                var table = _bLL_Log_Fields_Selected.Table(cbx_Database.Text, lbx_Table.SelectedValue.ToString());
+                if (table.Count == 0)
+                {
+                    AutoSelectKeyWord();
+                }
+                else
+                {
+                    foreach (DataRow item in _BLLDatabase.GetField(lbx_Table.SelectedItem.ToString()).Rows)
+                    {
+                        DataGridViewRow row = (DataGridViewRow)dgv_Table.Rows[0].Clone();
+                        row.Cells[0].Value = item[0];
+                        row.Cells[1].Value = item[1];
+                        row.Cells[2].Value = item[2];
+                        row.Cells[3].Value = item[3];
+                        row.Cells[4].Value = item[4];
+                        row.Cells[5].Value = item[5];
+                        row.Cells[6].Value = item[6];
+                        var historyIsSave = table.FirstOrDefault(x => x[3].ToString().Equals(row.Cells[0].Value.ToString()));
+                        if (historyIsSave != null)
+                        {
+                            row.Cells[7].Value = historyIsSave[4];
+                            row.Cells[8].Value = historyIsSave[5];
+                            row.Cells[9].Value = historyIsSave[6];
+                            row.Cells[10].Value = historyIsSave[7];
+                            row.Cells[11].Value = historyIsSave[8];
+                            row.Cells[12].Value = historyIsSave[9];
+                            row.Cells[13].Value = historyIsSave[10];
+                            row.Cells[14].Value = historyIsSave[11];
+                            row.Cells[15].Value = historyIsSave[12];
+                        }
+                        dgv_Table.Rows.Add(row);
+                    }
 
+                }
             }
 
             else
@@ -184,12 +222,12 @@ namespace WindowsFormsApp1
                         }
                         dgv_Table.Rows.Add(row);
                     }
-                    txt_ClassName.Text = lbx_Table.SelectedItem.ToString();
+                  
                 }
 
 
             }
-
+            txt_ClassName.Text = lbx_Table.SelectedItem.ToString();
             dgv_Table.AllowUserToAddRows = false;
             dgv_Table.AllowUserToDeleteRows = false;
 
@@ -340,11 +378,14 @@ namespace WindowsFormsApp1
                         string type = dgv_Table.Rows[j].Cells[2].Value.ToString();
                         string lenght = dgv_Table.Rows[j].Cells[3].Value.ToString();
                         string isNull = dgv_Table.Rows[j].Cells[1].Value.ToString();
-                        char[] require = dgv_Table.Rows[j].Cells[i].Value.ToString().ToCharArray().Distinct().ToArray();
-                        foreach (var key in require)
+                        if(!(string.IsNullOrEmpty(dgv_Table.Rows[j].Cells[i].Value.ToString()) || string.IsNullOrWhiteSpace(dgv_Table.Rows[j].Cells[i].Value.ToString())))
                         {
-                            field.Add(GetFieldSql.Convert(type, lenght, name, key, language));
-                        }
+                            char[] require = dgv_Table.Rows[j].Cells[i].Value.ToString().ToCharArray().Distinct().ToArray();
+                            foreach (var key in require)
+                            {
+                                field.Add(GetFieldSql.Convert(type, lenght, name, key, language));
+                            }
+                        }    
                         //if (require.Contains('c'))
                         //{
                         //    field.Add(GetFieldSql.Convert(type, lenght, name, 'c', language));
@@ -518,6 +559,7 @@ namespace WindowsFormsApp1
                         MessageBox.Show(msgEr);
                         return;
                     }
+                    MessageBox.Show("Lưu thành công", "Meseage");
                 }
             }
             catch (Exception ex)
@@ -855,7 +897,34 @@ namespace WindowsFormsApp1
 
         private void rad_View_CheckedChanged(object sender, EventArgs e)
         {
+            if(rad_View.Checked)
+            {
+                var soucrce = _BLLDatabase.GetView(_dataBase);
+                lbx_Table.DataSource = soucrce;
 
+                var tasks = new List<Task>();
+                tasks.Add(Task.Run(() =>
+                {
+                    cbx_FromTable.Items.Clear();
+
+                    foreach (var item in soucrce)
+                    {
+                        cbx_FromTable.Items.Add(item);
+                    }
+                    cbx_FromTable.SelectedIndex = 0;
+                }));
+                tasks.Add(Task.Run(() =>
+                {
+                    cbx_ToTable.Items.Clear();
+                    foreach (var item in soucrce)
+                    {
+                        cbx_ToTable.Items.Add(item);
+                    }
+                    cbx_ToTable.SelectedIndex = cbx_ToTable.Items.Count - 1;
+                }));
+
+                Task task = Task.WhenAll(tasks);
+            }    
         }
 
         private void rad_Table_CheckedChanged(object sender, EventArgs e)
@@ -908,6 +977,11 @@ namespace WindowsFormsApp1
         }
 
         private void txt_Search_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
 
         }

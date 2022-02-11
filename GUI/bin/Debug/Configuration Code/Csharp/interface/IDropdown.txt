@@ -1,3 +1,0 @@
-﻿  Task<PagedResultBase> Paging(PagingRequestBase pagingRequest);
-
-

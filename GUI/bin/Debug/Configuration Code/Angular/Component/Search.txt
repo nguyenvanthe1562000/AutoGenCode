@@ -1,7 +1,0 @@
-
-  search({{parameters.init}}) {
-  
-      this.service.search{{nametable}}({{parameters.pass}});
-       
-   
-  }

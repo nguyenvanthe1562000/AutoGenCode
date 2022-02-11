@@ -1,2 +1,0 @@
-bool Search(int page_index, int page_size, char lang, out long total,{{parameters.init}});
-  

@@ -1,7 +1,0 @@
-﻿
-         public  async Task<{{class.model}}> GetById({{parameters.init}})
-        {
-            var result = {{variable.repository}}.GetById({{parameters.pass}});
-            return await result;
-        }
-

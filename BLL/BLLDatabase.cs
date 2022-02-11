@@ -53,5 +53,12 @@ namespace BLL
             msg = "";
             return get_db_tb.ExcuteQuery(out msg,query);
         }
+
+        public List<string> GetView(string db)
+        {
+            return get_db_tb.GetView(db);
+        }
+
+
     }
 }

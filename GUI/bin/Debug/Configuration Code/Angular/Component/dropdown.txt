@@ -1,5 +1,0 @@
-﻿public bool Other({{parameters.init}})
-    {
-        db.SaveChanges();
-        return true;	
-    }

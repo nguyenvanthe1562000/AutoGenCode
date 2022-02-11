@@ -56,6 +56,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.tctrl_LanguageFunction = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.rad_View = new System.Windows.Forms.RadioButton();
             this.rad_SProcedure = new System.Windows.Forms.RadioButton();
             this.rad_Table = new System.Windows.Forms.RadioButton();
@@ -70,6 +71,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.cbx_Database = new System.Windows.Forms.ComboBox();
             this.lbx_Table = new System.Windows.Forms.ListBox();
+            this.ctxmnu_ViewQuerySQL = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.mãTạoTableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mãTạoViewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mãTạoStoreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mãTạoTriggerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mãTạoFunctionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabpage4 = new System.Windows.Forms.TabPage();
             this.ckb_DefaultNamespace = new System.Windows.Forms.CheckBox();
             this.language = new System.Windows.Forms.GroupBox();
@@ -98,8 +105,12 @@
             this.rad_ServiceApiA = new System.Windows.Forms.RadioButton();
             this.rad_ModelA = new System.Windows.Forms.RadioButton();
             this.pn_Sql = new System.Windows.Forms.TabPage();
+            this.rad_ExecProcedure = new System.Windows.Forms.RadioButton();
             this.rad_TriggerEvtLog = new System.Windows.Forms.RadioButton();
             this.rdb_StoreProcedure = new System.Windows.Forms.RadioButton();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
@@ -141,22 +152,16 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.tabController3 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.rtb_Main = new System.Windows.Forms.RichTextBox();
+            this.rtb_Main = new FastColoredTextBoxNS.FastColoredTextBox();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.ctxmnu_ViewQuerySQL = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.mãTạoTableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mãTạoViewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mãTạoStoreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mãTạoTriggerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mãTạoFunctionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_Menu.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tctrl_LanguageFunction.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.ctxmnu_ViewQuerySQL.SuspendLayout();
             this.tabpage4.SuspendLayout();
             this.language.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -167,13 +172,14 @@
             this.tpage_Angular.SuspendLayout();
             this.pn_Angular.SuspendLayout();
             this.pn_Sql.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Table)).BeginInit();
             this.panel3.SuspendLayout();
             this.tabController3.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.ctxmnu_ViewQuerySQL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rtb_Main)).BeginInit();
             this.SuspendLayout();
             // 
             // mnu_Menu
@@ -185,7 +191,7 @@
             this.configToolStripMenuItem});
             this.mnu_Menu.Location = new System.Drawing.Point(0, 0);
             this.mnu_Menu.Name = "mnu_Menu";
-            this.mnu_Menu.Size = new System.Drawing.Size(1354, 27);
+            this.mnu_Menu.Size = new System.Drawing.Size(1373, 27);
             this.mnu_Menu.TabIndex = 0;
             this.mnu_Menu.Text = "menuStrip1";
             // 
@@ -297,7 +303,7 @@
             this.tsb_ShowFormSql});
             this.toolStrip1.Location = new System.Drawing.Point(0, 27);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1354, 75);
+            this.toolStrip1.Size = new System.Drawing.Size(1373, 75);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -414,7 +420,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 102);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(322, 607);
+            this.panel1.Size = new System.Drawing.Size(322, 649);
             this.panel1.TabIndex = 2;
             // 
             // tctrl_LanguageFunction
@@ -426,11 +432,12 @@
             this.tctrl_LanguageFunction.Location = new System.Drawing.Point(0, 0);
             this.tctrl_LanguageFunction.Name = "tctrl_LanguageFunction";
             this.tctrl_LanguageFunction.SelectedIndex = 0;
-            this.tctrl_LanguageFunction.Size = new System.Drawing.Size(322, 607);
+            this.tctrl_LanguageFunction.Size = new System.Drawing.Size(322, 649);
             this.tctrl_LanguageFunction.TabIndex = 0;
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.radioButton2);
             this.tabPage3.Controls.Add(this.rad_View);
             this.tabPage3.Controls.Add(this.rad_SProcedure);
             this.tabPage3.Controls.Add(this.rad_Table);
@@ -444,10 +451,21 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 24);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(314, 579);
+            this.tabPage3.Size = new System.Drawing.Size(314, 621);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "Ds Table";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(242, 108);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(72, 19);
+            this.radioButton2.TabIndex = 13;
+            this.radioButton2.Text = "Function";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // rad_View
             // 
@@ -579,15 +597,57 @@
             // 
             // lbx_Table
             // 
+            this.lbx_Table.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.lbx_Table.ContextMenuStrip = this.ctxmnu_ViewQuerySQL;
-            this.lbx_Table.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lbx_Table.FormattingEnabled = true;
             this.lbx_Table.ItemHeight = 15;
-            this.lbx_Table.Location = new System.Drawing.Point(3, 137);
+            this.lbx_Table.Location = new System.Drawing.Point(3, 149);
             this.lbx_Table.Name = "lbx_Table";
-            this.lbx_Table.Size = new System.Drawing.Size(308, 439);
+            this.lbx_Table.Size = new System.Drawing.Size(308, 469);
             this.lbx_Table.TabIndex = 0;
             this.lbx_Table.SelectedIndexChanged += new System.EventHandler(this.lbx_Table_SelectedIndexChanged);
+            // 
+            // ctxmnu_ViewQuerySQL
+            // 
+            this.ctxmnu_ViewQuerySQL.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mãTạoTableToolStripMenuItem,
+            this.mãTạoViewToolStripMenuItem,
+            this.mãTạoStoreToolStripMenuItem,
+            this.mãTạoTriggerToolStripMenuItem,
+            this.mãTạoFunctionToolStripMenuItem});
+            this.ctxmnu_ViewQuerySQL.Name = "ctxmnu_ViewQuerySQL";
+            this.ctxmnu_ViewQuerySQL.Size = new System.Drawing.Size(162, 114);
+            // 
+            // mãTạoTableToolStripMenuItem
+            // 
+            this.mãTạoTableToolStripMenuItem.Name = "mãTạoTableToolStripMenuItem";
+            this.mãTạoTableToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.mãTạoTableToolStripMenuItem.Text = "Mã tạo table";
+            // 
+            // mãTạoViewToolStripMenuItem
+            // 
+            this.mãTạoViewToolStripMenuItem.Name = "mãTạoViewToolStripMenuItem";
+            this.mãTạoViewToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.mãTạoViewToolStripMenuItem.Text = "Mã tạo view";
+            // 
+            // mãTạoStoreToolStripMenuItem
+            // 
+            this.mãTạoStoreToolStripMenuItem.Name = "mãTạoStoreToolStripMenuItem";
+            this.mãTạoStoreToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.mãTạoStoreToolStripMenuItem.Text = "Mã tạo store";
+            // 
+            // mãTạoTriggerToolStripMenuItem
+            // 
+            this.mãTạoTriggerToolStripMenuItem.Name = "mãTạoTriggerToolStripMenuItem";
+            this.mãTạoTriggerToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.mãTạoTriggerToolStripMenuItem.Text = "Mã tạo trigger";
+            // 
+            // mãTạoFunctionToolStripMenuItem
+            // 
+            this.mãTạoFunctionToolStripMenuItem.Name = "mãTạoFunctionToolStripMenuItem";
+            this.mãTạoFunctionToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.mãTạoFunctionToolStripMenuItem.Text = "Mã tạo Function";
             // 
             // tabpage4
             // 
@@ -603,7 +663,7 @@
             this.tabpage4.Location = new System.Drawing.Point(4, 24);
             this.tabpage4.Name = "tabpage4";
             this.tabpage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabpage4.Size = new System.Drawing.Size(314, 579);
+            this.tabpage4.Size = new System.Drawing.Size(314, 621);
             this.tabpage4.TabIndex = 1;
             this.tabpage4.Text = "Cấu Hình";
             this.tabpage4.UseVisualStyleBackColor = true;
@@ -688,7 +748,7 @@
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Location = new System.Drawing.Point(6, 131);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(302, 443);
+            this.groupBox1.Size = new System.Drawing.Size(302, 482);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Code";
@@ -706,6 +766,7 @@
             this.tabMethod.Controls.Add(this.tpage_Csharp);
             this.tabMethod.Controls.Add(this.tpage_Angular);
             this.tabMethod.Controls.Add(this.pn_Sql);
+            this.tabMethod.Controls.Add(this.tabPage2);
             this.tabMethod.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabMethod.Location = new System.Drawing.Point(0, 0);
             this.tabMethod.Name = "tabMethod";
@@ -897,7 +958,7 @@
             // 
             // pn_Sql
             // 
-            this.pn_Sql.Controls.Add(this.radioButton1);
+            this.pn_Sql.Controls.Add(this.rad_ExecProcedure);
             this.pn_Sql.Controls.Add(this.rad_TriggerEvtLog);
             this.pn_Sql.Controls.Add(this.rdb_StoreProcedure);
             this.pn_Sql.Location = new System.Drawing.Point(4, 24);
@@ -907,6 +968,16 @@
             this.pn_Sql.TabIndex = 2;
             this.pn_Sql.Text = "SQL";
             this.pn_Sql.UseVisualStyleBackColor = true;
+            // 
+            // rad_ExecProcedure
+            // 
+            this.rad_ExecProcedure.AutoSize = true;
+            this.rad_ExecProcedure.Location = new System.Drawing.Point(13, 41);
+            this.rad_ExecProcedure.Name = "rad_ExecProcedure";
+            this.rad_ExecProcedure.Size = new System.Drawing.Size(84, 19);
+            this.rad_ExecProcedure.TabIndex = 23;
+            this.rad_ExecProcedure.Text = "Exec Store";
+            this.rad_ExecProcedure.UseVisualStyleBackColor = true;
             // 
             // rad_TriggerEvtLog
             // 
@@ -930,8 +1001,46 @@
             this.rdb_StoreProcedure.Text = "StoreProcedure";
             this.rdb_StoreProcedure.UseVisualStyleBackColor = true;
             // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.radioButton3);
+            this.tabPage2.Controls.Add(this.radioButton1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 24);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(281, 112);
+            this.tabPage2.TabIndex = 3;
+            this.tabPage2.Text = "Bravo";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Checked = true;
+            this.radioButton3.Location = new System.Drawing.Point(96, 6);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(81, 19);
+            this.radioButton3.TabIndex = 23;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Tạo Editor";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
+            this.radioButton1.Location = new System.Drawing.Point(14, 6);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(69, 19);
+            this.radioButton1.TabIndex = 22;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "tạo view";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
             // groupBox2
             // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.Controls.Add(this.label23);
             this.groupBox2.Controls.Add(this.label22);
             this.groupBox2.Controls.Add(this.label18);
@@ -947,9 +1056,9 @@
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Location = new System.Drawing.Point(5, 167);
+            this.groupBox2.Location = new System.Drawing.Point(7, 167);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(291, 315);
+            this.groupBox2.Size = new System.Drawing.Size(291, 309);
             this.groupBox2.TabIndex = 13;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Key Word";
@@ -1123,11 +1232,12 @@
             // 
             // panel2
             // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.Controls.Add(this.dgv_Table);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(322, 467);
+            this.panel2.Location = new System.Drawing.Point(322, 526);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1032, 242);
+            this.panel2.Size = new System.Drawing.Size(1051, 225);
             this.panel2.TabIndex = 3;
             // 
             // dgv_Table
@@ -1151,11 +1261,12 @@
             this.SaveFromList,
             this.DropDown,
             this.GetById});
-            this.dgv_Table.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dgv_Table.Location = new System.Drawing.Point(0, -1);
+            this.dgv_Table.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_Table.Location = new System.Drawing.Point(0, 0);
+            this.dgv_Table.MultiSelect = false;
             this.dgv_Table.Name = "dgv_Table";
             this.dgv_Table.RowHeadersWidth = 30;
-            this.dgv_Table.Size = new System.Drawing.Size(1032, 243);
+            this.dgv_Table.Size = new System.Drawing.Size(1051, 225);
             this.dgv_Table.TabIndex = 7;
             // 
             // Fields
@@ -1262,11 +1373,13 @@
             // 
             // panel3
             // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.Controls.Add(this.tabController3);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(322, 102);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1032, 356);
+            this.panel3.Size = new System.Drawing.Size(1051, 418);
             this.panel3.TabIndex = 4;
             // 
             // tabController3
@@ -1277,7 +1390,7 @@
             this.tabController3.Location = new System.Drawing.Point(0, 0);
             this.tabController3.Name = "tabController3";
             this.tabController3.SelectedIndex = 0;
-            this.tabController3.Size = new System.Drawing.Size(1032, 356);
+            this.tabController3.Size = new System.Drawing.Size(1051, 418);
             this.tabController3.TabIndex = 0;
             // 
             // tabPage1
@@ -1286,83 +1399,60 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1024, 328);
+            this.tabPage1.Size = new System.Drawing.Size(1043, 390);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Main";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // rtb_Main
             // 
-            this.rtb_Main.AcceptsTab = true;
+            this.rtb_Main.AutoCompleteBracketsList = new char[] {
+        '(',
+        ')',
+        '{',
+        '}',
+        '[',
+        ']',
+        '\"',
+        '\"',
+        '\'',
+        '\''};
+            this.rtb_Main.AutoIndentCharsPatterns = "";
+            this.rtb_Main.AutoScrollMinSize = new System.Drawing.Size(0, 14);
+            this.rtb_Main.BackBrush = null;
+            this.rtb_Main.CharHeight = 14;
+            this.rtb_Main.CharWidth = 8;
+            this.rtb_Main.CommentPrefix = "--";
+            this.rtb_Main.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.rtb_Main.DefaultMarkerSize = 8;
+            this.rtb_Main.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.rtb_Main.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtb_Main.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtb_Main.Font = new System.Drawing.Font("Courier New", 9.75F);
+            this.rtb_Main.IsReplaceMode = false;
+            this.rtb_Main.Language = FastColoredTextBoxNS.Language.SQL;
+            this.rtb_Main.LeftBracket = '(';
             this.rtb_Main.Location = new System.Drawing.Point(3, 3);
             this.rtb_Main.Name = "rtb_Main";
-            this.rtb_Main.Size = new System.Drawing.Size(1018, 322);
-            this.rtb_Main.TabIndex = 0;
-            this.rtb_Main.Text = "code model";
+            this.rtb_Main.Paddings = new System.Windows.Forms.Padding(0);
+            this.rtb_Main.RightBracket = ')';
+            this.rtb_Main.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
+            this.rtb_Main.ServiceColors = ((FastColoredTextBoxNS.ServiceColors)(resources.GetObject("rtb_Main.ServiceColors")));
+            this.rtb_Main.Size = new System.Drawing.Size(1037, 384);
+            this.rtb_Main.TabIndex = 5;
+            this.rtb_Main.ToolTipDelay = 500;
+            this.rtb_Main.WordWrap = true;
+            this.rtb_Main.Zoom = 100;
             // 
             // openFileDialog
             // 
             this.openFileDialog.FileName = "openFileDialog1";
             this.openFileDialog.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog_FileOk);
             // 
-            // ctxmnu_ViewQuerySQL
-            // 
-            this.ctxmnu_ViewQuerySQL.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mãTạoTableToolStripMenuItem,
-            this.mãTạoViewToolStripMenuItem,
-            this.mãTạoStoreToolStripMenuItem,
-            this.mãTạoTriggerToolStripMenuItem,
-            this.mãTạoFunctionToolStripMenuItem});
-            this.ctxmnu_ViewQuerySQL.Name = "ctxmnu_ViewQuerySQL";
-            this.ctxmnu_ViewQuerySQL.Size = new System.Drawing.Size(181, 136);
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(13, 41);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(84, 19);
-            this.radioButton1.TabIndex = 23;
-            this.radioButton1.Text = "Exec Store";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // mãTạoTableToolStripMenuItem
-            // 
-            this.mãTạoTableToolStripMenuItem.Name = "mãTạoTableToolStripMenuItem";
-            this.mãTạoTableToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.mãTạoTableToolStripMenuItem.Text = "Mã tạo table";
-            // 
-            // mãTạoViewToolStripMenuItem
-            // 
-            this.mãTạoViewToolStripMenuItem.Name = "mãTạoViewToolStripMenuItem";
-            this.mãTạoViewToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.mãTạoViewToolStripMenuItem.Text = "Mã tạo view";
-            // 
-            // mãTạoStoreToolStripMenuItem
-            // 
-            this.mãTạoStoreToolStripMenuItem.Name = "mãTạoStoreToolStripMenuItem";
-            this.mãTạoStoreToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.mãTạoStoreToolStripMenuItem.Text = "Mã tạo store";
-            // 
-            // mãTạoTriggerToolStripMenuItem
-            // 
-            this.mãTạoTriggerToolStripMenuItem.Name = "mãTạoTriggerToolStripMenuItem";
-            this.mãTạoTriggerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.mãTạoTriggerToolStripMenuItem.Text = "Mã tạo trigger";
-            // 
-            // mãTạoFunctionToolStripMenuItem
-            // 
-            this.mãTạoFunctionToolStripMenuItem.Name = "mãTạoFunctionToolStripMenuItem";
-            this.mãTạoFunctionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.mãTạoFunctionToolStripMenuItem.Text = "Mã tạo Function";
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1354, 709);
+            this.ClientSize = new System.Drawing.Size(1373, 751);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -1386,6 +1476,7 @@
             this.tabPage3.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.ctxmnu_ViewQuerySQL.ResumeLayout(false);
             this.tabpage4.ResumeLayout(false);
             this.tabpage4.PerformLayout();
             this.language.ResumeLayout(false);
@@ -1401,6 +1492,8 @@
             this.pn_Angular.PerformLayout();
             this.pn_Sql.ResumeLayout(false);
             this.pn_Sql.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -1408,7 +1501,7 @@
             this.panel3.ResumeLayout(false);
             this.tabController3.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.ctxmnu_ViewQuerySQL.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.rtb_Main)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1437,7 +1530,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_ClassName;
         private System.Windows.Forms.TextBox txt_Namespace;
-        private System.Windows.Forms.RichTextBox rtb_Main;
         private System.Windows.Forms.ToolStripButton tsb_Save;
         private System.Windows.Forms.Button btn_Refresh;
         private System.Windows.Forms.Label label4;
@@ -1530,12 +1622,17 @@
         private System.Windows.Forms.RadioButton rad_SProcedure;
         private System.Windows.Forms.RadioButton rad_Table;
         private System.Windows.Forms.ToolStripButton tsb_ShowFormSql;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rad_ExecProcedure;
         private System.Windows.Forms.ContextMenuStrip ctxmnu_ViewQuerySQL;
         private System.Windows.Forms.ToolStripMenuItem mãTạoTableToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mãTạoViewToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mãTạoStoreToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mãTạoTriggerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mãTạoFunctionToolStripMenuItem;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private FastColoredTextBoxNS.FastColoredTextBox rtb_Main;
     }
 }

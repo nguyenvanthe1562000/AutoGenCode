@@ -69,6 +69,34 @@ namespace DAL
             return lst;
             
         }
+        public List<string> GetView(string db)
+        {
+            Database = db;
+            List<string> lst = new List<string>();
+            //SqlDataReader reader = SqlHelper.ExecuteReader(, CommandType.Text, "SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES");
+            //while (reader.Read())
+            //{
+            //    lst.Add(reader.GetString(0));
+            //}
+            //List<string> lst = new List<string>();
+
+            using (SqlConnection sql = new SqlConnection(conect_query(db)))
+            {
+                sql.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = sql;
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "SELECT * FROM sys.views";
+                cmd.CommandTimeout = 15;
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    lst.Add(reader.GetString(0));
+                }
+            }
+            return lst;
+
+        }
         public DataTable get_fields(string tb)
         {
             try

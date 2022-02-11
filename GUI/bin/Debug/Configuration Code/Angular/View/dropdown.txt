@@ -1,3 +1,0 @@
-<select formControlName="state">
-        {{gen.dropdownoption}}
-      </select>

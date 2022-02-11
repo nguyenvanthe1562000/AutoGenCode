@@ -1,5 +1,0 @@
-savefile:	+ tên file = tên class+tên namespace
-	+chương trình sẽ tìm folder (tùy theo layer người dùng chọn)  đầu tiên và lưu vào nếu không tìm thấy sẽ tạo 1 folder(có tên layer chọn) ở ngay chính đường dẫn người dùng cung cấp.
-	+trong trường hợp có 1 file trùng với tên file cung cấp thì tên file cung cấp sẽ lưu = tên class+tên namespace + genCode
-	+chương trình sẽ tìm và lưu đường dẫn vào file(file generate code) có đuôi csproj( tìm thấy đầu tiên).
-

@@ -1,5 +1,0 @@
-C:\Users\nguye\source\repos\Generate_Code\automatic-code-generation\Model\bin\Release\Model.dll
-C:\Users\nguye\source\repos\Generate_Code\automatic-code-generation\Model\bin\Release\Model.pdb
-C:\Users\nguye\source\repos\Generate_Code\automatic-code-generation\Model\obj\Release\Model.csproj.CoreCompileInputs.cache
-C:\Users\nguye\source\repos\Generate_Code\automatic-code-generation\Model\obj\Release\Model.dll
-C:\Users\nguye\source\repos\Generate_Code\automatic-code-generation\Model\obj\Release\Model.pdb

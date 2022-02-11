@@ -1,5 +1,0 @@
-
-        public List<{{class.model}}> Search({{parameters.init}})
-        {
-            return {{variable.repository}}.Search({{parameters.pass}});
-        }

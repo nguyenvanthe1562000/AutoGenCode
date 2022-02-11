@@ -1,5 +1,0 @@
-     GetAll{{nametable}}() {
-    return this.http.get(this.baseURL)
-	.toPromise()
-	.then(res =>this.list = res as {{nametable}}[]);
-  }

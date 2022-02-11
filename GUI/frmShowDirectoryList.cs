@@ -80,6 +80,7 @@ namespace WindowsFormsApp1
 
             string path = lst_FilePath.Items[index].ToString();
             string msgEr = string.Empty;
+            _fileName = txt_FileName.Text;
             var saveAble = ReadSaveFile.SaveFileToProject(path, _language, _fileName, _content, out msgEr);
             if (!saveAble)
             {

@@ -1,5 +1,0 @@
-public bool SearchByString({{parameters.init}})
-    {
-        db.SaveChanges();
-        return true;	
-    }

@@ -9,7 +9,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>WindowsFormsApp1</RootNamespace>
     <AssemblyName>WindowsFormsApp1</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -35,6 +35,7 @@
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -113,6 +114,18 @@
   <ItemGroup>
     <Compile Include="CustomExtension\EntityCsharp.cs" />
     <Compile Include="CustomExtension\TriggerSQL.cs" />
+    <Compile Include="frmBrovoEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBrovoEditor.Designer.cs">
+      <DependentUpon>frmBrovoEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreateView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateView.Designer.cs">
+      <DependentUpon>frmCreateView.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmShowDirectoryList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +164,9 @@
     <Compile Include="Tutorial.Designer.cs">
       <DependentUpon>Tutorial.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmCreateView.resx">
+      <DependentUpon>frmCreateView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmShowDirectoryList.resx">
       <DependentUpon>frmShowDirectoryList.cs</DependentUpon>
     </EmbeddedResource>

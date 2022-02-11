@@ -1,3 +1,0 @@
-bool Update( {{class.model}} model)
-                           
-              

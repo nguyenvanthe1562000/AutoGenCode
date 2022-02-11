@@ -1,5 +1,0 @@
-viết theo mô hình 3 lớp 
-hệ thông gồm: common,model.gui.bll,dal
-các file hướng đã được để path mặc định trong project
-file config.json : chứa các đường dẫn file method (code mẫu để gencode)
-keyword: type#name#keyword

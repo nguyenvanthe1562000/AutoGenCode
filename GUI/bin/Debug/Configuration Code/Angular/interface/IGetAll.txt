@@ -1,1 +1,0 @@
-List<{{class.model}}> GetAll();

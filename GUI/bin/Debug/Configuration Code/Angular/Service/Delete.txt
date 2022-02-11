@@ -1,3 +1,0 @@
-  delete{{nametable}}({{parameters.fromuri}}) {
-    return this.http.delete(`${this.baseURL}/{{parameters.route}}`);
-  }
